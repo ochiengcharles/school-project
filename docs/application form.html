@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Application Form â€“ Stâ€¯Peter's Nkokonjeru SS</title>
+  <style>
+    :root {
+      --clr-red: #c62828;
+      --clr-red-dark: #8e0000;
+      --clr-yellow: #ffd600;
+    }body {
+  font-family: Arial, sans-serif;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff9e6; /* subtle warm yellow */
+  color: #333;
+}
+
+/* === Header === */
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.school-badge {
+  width: 80px;
+  height: auto;
+}
+
+.title-group h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: var(--clr-red);
+}
+
+.motto {
+  margin: 2px 0 0;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  color: var(--clr-red-dark);
+  font-weight: bold;
+}
+
+.contact-info {
+  font-size: 0.9em;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* === Form === */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: bold;
+  color: var(--clr-red);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* === Button & File Selector === */
+button {
+  margin-top: 24px;
+  background-color: var(--clr-red);
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(198, 40, 40, 0.3);
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--clr-red-dark);
+  box-shadow: 0 4px 10px rgba(255, 214, 0, 0.4);
+}
+
+input[type="file"]::file-selector-button {
+  background: var(--clr-red);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: var(--clr-red-dark);
+}
+
+small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85em;
+  color: #666;
+}
+
+/* === Responsive tweaks === */
+@media (max-width: 480px) {
+  .title-group h1 { font-size: 1.4rem; }
+  .motto { font-size: 0.9rem; }
+  form { padding: 16px; }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header with badge, name, and motto -->
+  <div class="header-container">
+    <!-- Replace with actual badge path -->
+    <img src="assets/images/student 1.jpg" alt="St Peter's Nkokonjeru SS Badge" class="school-badge" />
+    <div class="title-group">
+      <h1>St Peter's Nkokonjeru SS</h1>
+      <p class="motto">DUC IN ALTUM</p>
+    </div>
+  </div>  <div class="contact-info">
+    <p><strong>Location:</strong> Nkokonjeru, 18â€¯km off Jinjaâ€¯Road branching off Watoniâ€¯Mukono</p>
+    <p><strong>P.O.â€¯Box:</strong> 962â€¯Mukono</p>
+    <p><strong>Tel:</strong> 070â€¯208â€¯7622 / 077â€¯074â€¯6123</p>
+    <p><strong>Email:</strong> stpetersnkoko@gmail.com</p>
+  </div>  <!-- ==================== FORM ==================== -->  <!-- Uses Formsubmit to send results to iamcharlesoc@gmail.com -->  <form action="https://formsubmit.co/iamcharlesoc@gmail.com" method="POST" enctype="multipart/form-data">
+    <!-- Disable Formsubmit captcha (optional) -->
+    <input type="hidden" name="_captcha" value="false" />
+    <!-- Redirect URL after successful submit (change if needed) -->
+    <input type="hidden" name="_next" value="https://stpeters.example.com/thank-you.html" /><label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="Full Name" placeholder="Enter full name" required />
+
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="Date of Birth" required />
+
+<label for="gender">Gender</label>
+<select id="gender" name="Gender" required>
+  <option value="" disabled selected>Select gender</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select>
+
+<label for="address">Home Address</label>
+<textarea id="address" name="Home Address" rows="3" placeholder="Enter home address" required></textarea>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="Phone Number" placeholder="Enter phone number" required />
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="Applicant Email" placeholder="Enter email address" required />
+
+<label for="previousschool">Previous School Attended</label>
+<input type="text" id="previousschool" name="Previous School" placeholder="Enter previous school name" required />
+
+<label for="classapply">Class Applying For</label>
+<select id="classapply" name="Class Applied" required>
+  <option value="" disabled selected>Select class</option>
+  <option value="Senior 1 (S1)">Senior 1 (S1)</option>
+  <option value="Senior 2 (S2)">Senior 2 (S2)</option>
+  <option value="Senior 3 (S3)">Senior 3 (S3)</option>
+  <option value="Senior 4 (S4)">Senior 4 (S4)</option>
+  <option value="Senior 5 (S5)">Senior 5 (S5)</option>
+  <option value="Senior 6 (S6)">Senior 6 (S6)</option>
+</select>
+
+<label for="reportcard">Upload Report Card</label>
+<input type="file" id="reportcard" name="Report Card" accept=".pdf, .jpg, .jpeg, .png" required />
+<small>Please upload your most recent report card (PDF or image, â‰¤â€¯5â€¯MB).</small>
+
+<button type="submit">Submit Application</button>
+
+  </form>
+</body>
+</html>
