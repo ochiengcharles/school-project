@@ -1,0 +1,202 @@
+﻿```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 1000px;
+            height: 90vh;
+            min-height: 650px;
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Chat Header */
+        .chat-header {
+            height: 75px;
+            background: #1e3a8a;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            gap: 15px;
+        }
+
+        .bot-icon {
+            width: 45px;
+            height: 45px;
+            background: white;
+            color: #1e3a8a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .header-text h2 {
+            font-size: 19px;
+            margin-bottom: 4px;
+        }
+
+        .header-text p {
+            font-size: 13px;
+            opacity: 0.85;
+        }
+
+        .status {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 13px;
+        }
+
+        .status-dot {
+            width: 9px;
+            height: 9px;
+            background: #22c55e;
+            border-radius: 50%;
+        }
+
+        /* Chat Area */
+        .chat-body {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .chat-body iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 575px;
+            border: none;
+            display: block;
+        }
+
+        /* Footer */
+        .chat-footer {
+            height: 40px;
+            background: #f8fafc;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-size: 12px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            body {
+                padding: 0;
+            }
+
+            .chat-container {
+                width: 100%;
+                height: 100vh;
+                min-height: 100vh;
+                border-radius: 0;
+            }
+
+            .chat-header {
+                height: 65px;
+                padding: 0 15px;
+            }
+
+            .bot-icon {
+                width: 38px;
+                height: 38px;
+                font-size: 18px;
+            }
+
+            .header-text h2 {
+                font-size: 16px;
+            }
+
+            .header-text p {
+                font-size: 11px;
+            }
+
+            .status {
+                font-size: 11px;
+            }
+
+            .chat-body iframe {
+                min-height: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+
+            <div class="bot-icon">
+                AI
+            </div>
+
+            <div class="header-text">
+                <h2>AI Assistant</h2>
+                <p>How can I help you today?</p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Online
+            </div>
+
+        </div>
+
+        <!-- Chatbot -->
+        <div class="chat-body">
+
+            <iframe
+                src="https://www.chatbase.co/chatbot-iframe/DW7_DtCFF3rUB5CnrnAQT"
+                width="100%"
+                style="height: 100%; min-height: 700px"
+                frameborder="0"
+                allow="microphone">
+            </iframe>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="chat-footer">
+            Powered by AI Assistant
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

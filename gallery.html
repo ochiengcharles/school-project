@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - St.Peter's Nkokonjeru SS.</title> Gallery - St. Peter's Nkokonjeru SS.
+    <link rel="icon" type="Image" href="assets/images/student 1.jpg">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="assets/images/student 1.jpg" alt="School Badge" class="logo-img">
+                    <div class="logo-text">
+                        <h1>St Peter's Nkokonjeru <span class="accent">SS.</span></h1>
+                        <p class="motto">DUC IN ALTUM</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="home.html" class="nav-link active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="about us.html" class="nav-link">About Us <i class="fas fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#mission">Mission & Vision</a></li>
+                                <li><a href="#leadership">Leadership</a></li>
+                                <li><a href="#values">Core Values</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="academics.html" class="nav-link">Academics <i class="fas fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#curriculum">Curriculum</a></li>
+                                <li><a href="#departments">Departments</a></li>
+                                <li><a href="#results">Exam Results</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="admission.html" class="nav-link">Admissions</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="student life.html" class="nav-link">Student Life</a></li>
+                        <li><a href="contact us.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+         <section id="home" class="hero-section">
+    <div class="hero-slider">
+        <div class="slide slide-1 active" style="background-image: url('assets/images/staff 2.jpg');">
+            <div class="slide-content">
+                <h2 class="hero-title">Memories in Every Frame .</h2>
+                <p class="hero-subtitle">Snapshots of School excellence.</p>
+                </div>
+        </div>
+
+        <div class="slide slide-2" style="background-image: url('assets/images/culture 3.jpg');">
+            <div class="slide-content">
+                <h2 class="hero-title">Nurturing Young Bright Minds. </h2>
+                <p class="hero-subtitle">Bright Moments, brighter Futures</p>
+                </div>
+        </div>
+
+        <div class="slide slide-3" style="background-image: url('assets/images/ict 1.jpg');">
+            <div class="slide-content">
+                <h2 class="hero-title">Values, Unity, Vision, Pride.</h2>
+                <p class="hero-subtitle">Through Our School Lens. </p>
+                </div>
+        </div>
+    </div>
+
+    <button class="slider-nav prev" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slider-nav next" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="slider-dots">
+        <span class="dot active" data-slide-index="0" aria-label="Go to slide 1"></span>
+        <span class="dot" data-slide-index="1" aria-label="Go to slide 2"></span>
+        <span class="dot" data-slide-index="2" aria-label="Go to slide 3"></span>
+    </div>
+</section>
+        <section id="photos" class="gallery-section section-padding"> 
+            <div class="container">
+                <h2 class="section-heading">Photo Gallery</h2>
+
+                <div class="gallery-filters">
+                    <button class="gallery-category-btn active-category" data-category="all">All</button>
+                    <button class="gallery-category-btn" data-category="events">Events</button>
+                    <button class="gallery-category-btn" data-category="academics">Academics</button>
+                    <button class="gallery-category-btn" data-category="sports">Sports</button>
+                    <button class="gallery-category-btn" data-category="campus">Campus</button>
+                     <button class="gallery-category-btn" data-category="videos">Videos</button>
+                </div>
+
+                <div id="galleryGrid">
+                    <div class="gallery-item" data-category="events">
+                        <img src="student 7.jpg" alt="Sports Day">
+                        <div class="gallery-item-info">
+                            <h4>Annual Sports Day</h4>
+                            <p>Fun and competition on the field.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="academics">
+                        <img src="assets/images/ict 1.jpg" alt="Science Fair">
+                        <div class="gallery-item-info">
+                            <h4>Ict  Fair Showcase</h4>
+                            <p>Students presenting innovative projects.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="campus">
+                        <img src="assets/images/liturgy 6.jpg" alt="School Library">
+                        <div class="gallery-item-info">
+                            <h4>Modern Library</h4>
+                            <p>A quiet space for learning and research.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="sports">
+                        <img src="assets/images/school choir 1.jpg" alt="Basketball Game">
+                        <div class="gallery-item-info">
+                            <h4>Intense School Choir</h4>
+                            <p>Being God Fearing is the Key.</p>
+                        </div>
+                    </div>
+                     <div class="gallery-item" data-category="events">
+                        <img src="assets/images/liturgy 5.jpg" alt="Graduation Ceremony">
+                        <div class="gallery-item-info">
+                            <h4>St Peter's Day</h4>
+                            <p>Celebrating our Saint.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="academics">
+                        <img src="assets/images/student 3.jpg" alt="Classroom Interaction">
+                        <div class="gallery-item-info">
+                            <h4>Engaging Classroom</h4>
+                            <p>Interactive learning in progress.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="campus">
+                        <img src="assets/images/student 4.jpg" alt="School Playground">
+                        <div class="gallery-item-info">
+                            <h4>Spacious Playground</h4>
+                            <p>Students enjoying outdoor activities.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="sports">
+                        <img src="assets/images/artwork 1.jpg" alt="Football Training">
+                        <div class="gallery-item-info">
+                            <h4>Football Training Session</h4>
+                            <p>Developing skills and teamwork.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="academics">
+                        <img src="assets/images/agric 1.jpg" alt="Classroom Interaction">
+                        <div class="gallery-item-info">
+                            <h4>Engaging Classroom</h4>
+                            <p>Interactive learning in progress.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="videos" class="video-gallery-section"> 
+            <div class="container">
+                <h2>Our School in Action</h2>
+                <p class="section-description">Explore various aspects of student life, academic achievements, and school events through our video collection.</p>
+
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" playsinline>
+                                <source src="videos/academic-excellence.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Celebrating Academic Excellence</h3>
+                        <p>A look into our annual awards ceremony honoring top-performing students and dedicated staff.</p>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" playsinline>
+                                <source src="videos/sports-day-highlights.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Sports Day Highlights</h3>
+                        <p>Catch the excitement and competitive spirit from our recent inter-house sports competition.</p>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" playsinline>
+                                <source src="videos/community-outreach.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Inter-class club competition</h3>
+                        <p>Our students parcipating in the inter-class competition.</p>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" playsinline>
+                                <source src="v.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>A Day in the Life of a Student</h3>
+                        <p>Follow a typical day at St. Peter's, from morning assembly to extracurricular activities.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Lightbox Image">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+     <div class="ticker-wrap">
+      <div class="ticker">
+        <span>ðŸ“¢ New Update:</span> Term II end of term exams is from July 10th to July 20th! &bull;
+        <span>ðŸ† Achievement:</span> Our debate club won the regional championship! Congratulations! &bull;
+        <span>ðŸ“… Reminder:</span> Parent-Teacher conference on August 5th. Please mark your calendars! &bull;
+        <span>ðŸ’¡ Innovation:</span> New computer lab opening in September with 30 new workstations! &bull;
+
+
+        
+      </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>St. Peter's Nkokonjeru SS is dedicated to providing quality education and fostering a vibrant community where students thrive academically, socially, and personally.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="student life.html">Student Life</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p><i class="fas fa-map-marker-alt"></i> Located in Nkokonjeru 18Km off Jinja Road</p>
+                <p><i class="fas fa-phone"></i> +256 702087622/0770746123</p>
+                <p><i class="fas fa-envelope"></i> st.petersnkoko@gmail.com</p>
+                <p><i class="fas fa-envelope"></i> P.O.BOX 962, MUKONO</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 St. Peter's SS. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - St. Peter's Nkokonjeru SS</title>
+  <link rel="icon" href="assets/images/student 1.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .home-hero { min-height: 72vh; display: grid; place-items: center; text-align: center; color: #fff; background: linear-gradient(90deg, rgba(50,0,0,.72), rgba(50,0,0,.25)), url('assets/images/culture 6.jpg') center 42%/cover; }
+    .home-hero h2 { color: #fff; font-size: clamp(2.2rem, 5vw, 4rem); margin-bottom: .6rem; }
+    .home-hero p { color: #fff; font-size: clamp(1.1rem, 2vw, 1.5rem); }
+    .home-hero .btn { background: #FFD700; color: #8D0000; margin-top: 1rem; }
+    .home-cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 22px; }
+    .home-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,.1); }
+    .home-card img { width: 100%; height: 210px; object-fit: cover; display: block; }
+    .home-card div { padding: 20px; }
+    .home-card h3 { color: #8D0000; }
+    .welcome-layout { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 35px; align-items: center; }
+    .welcome-layout img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,.15); }
+    .home-cta { background: #8D0000; color: #fff; text-align: center; }
+    .home-cta h2 { color: #fff; }
+    .home-cta .btn { background: #FFD700; color: #8D0000; }
+    @media (max-width: 768px) { .home-hero { min-height: 55vh; } }
+  </style>
+</head>
+<body>
+  <header class="main-header"><div class="container"><div class="header-content">
+    <a class="logo" href="home.html"><img src="assets/images/student 1.jpg" alt="St Peter's school badge" class="logo-img"><span class="logo-text"><h1>St Peter's Nkokonjeru <span class="accent">SS.</span></h1><p class="motto">DUC IN ALTUM</p></span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    <nav class="main-nav"><ul class="nav-list">
+      <li><a class="nav-link active" href="home.html">Home</a></li><li><a class="nav-link" href="about us.html">About Us</a></li><li><a class="nav-link" href="academics.html">Academics</a></li><li><a class="nav-link" href="admission.html">Admissions</a></li><li><a class="nav-link" href="gallery.html">Gallery</a></li><li><a class="nav-link" href="student life.html">Student Life</a></li><li><a class="nav-link" href="contact us.html">Contact Us</a></li>
+    </ul></nav>
+  </div></div></header>
+  <main>
+    <section class="home-hero"><div class="container"><h2>Welcome to St. Peter's Nkokonjeru SS</h2><p>To educate an all round person</p><a class="btn" href="about us.html">Discover our school</a></div></section>
+    <section class="content-section"><div class="container welcome-layout"><div><h2 class="section-heading">A place to learn and grow</h2><p>St. Peter's Nkokonjeru Secondary School is committed to educating the whole person through learning, character formation and a supportive school community.</p><p>Explore our academic programmes, student life and the experiences that make our school community unique.</p><a class="btn-primary" href="about us.html">Learn about us</a></div><img src="assets/images/student 3.jpg" alt="Students at St Peter's Nkokonjeru"></div></section>
+    <section class="content-section" style="background:#f4f4f4"><div class="container"><h2 class="section-heading">Explore St. Peter's</h2><div class="home-cards">
+      <article class="home-card"><img src="assets/images/ict 1.jpg" alt="Students learning information technology"><div><h3>Academics</h3><p>Discover the subjects and learning opportunities offered at our school.</p><a href="academics.html">Explore academics →</a></div></article>
+      <article class="home-card"><img src="assets/images/culture 3.jpg" alt="School community activity"><div><h3>Student Life</h3><p>See how students learn, participate and grow together.</p><a href="student life.html">Explore student life →</a></div></article>
+      <article class="home-card"><img src="assets/images/prefects 1.JPG" alt="Student prefects"><div><h3>Our Community</h3><p>Meet the people and traditions that shape our school.</p><a href="gallery.html">View the gallery →</a></div></article>
+    </div></div></section>
+    <section class="home-cta"><div class="container"><h2>Ready to join our school community?</h2><p>Find out about the admissions process and how to apply.</p><a class="btn" href="admission.html">Admissions information</a></div></section>
+  </main>
+  <footer class="main-footer"><div class="container"><div class="footer-content">
+    <div class="footer-section"><h3>About Us</h3><p>St. Peter's Nkokonjeru SS is dedicated to quality education and the growth of every student.</p></div>
+    <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="academics.html">Academics</a></li><li><a href="admission.html">Admissions</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact us.html">Contact Us</a></li></ul></div>
+    <div class="footer-section"><h3>Contact</h3><p>Nkokonjeru, 18 km off Jinja Road</p><p>+256 702087622 / 0770746123</p><p>st.petersnkoko@gmail.com</p></div>
+  </div><div class="footer-bottom">© St Peter's Nkokonjeru SS. All rights reserved.</div></div></footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.main-nav .nav-list');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('active'); toggle.setAttribute('aria-expanded', String(open)); });
+  </script>
+</body>
+</html>
