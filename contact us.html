@@ -116,7 +116,7 @@
         <section class="content-section section-padding" id="form" style="background-color: var(--secondary-color);">
             <div class="container">
                 <h2 class="section-heading">Send Us a Message</h2>
-                <form class="contact-form" style="max-width: 600px; margin: 0 auto; background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+                <form id="contactForm" class="contact-form" style="max-width: 600px; margin: 0 auto; background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
                     <div class="form-group" style="margin-bottom: 20px;">
                         <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold;">Your Name:</label>
                         <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em;">
@@ -196,5 +196,8 @@
     </footer>
 
     <script src="javascript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+<script src="forms.js"></script>
 </body>
 </html>
