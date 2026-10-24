@@ -152,11 +152,8 @@ small {
     <p><strong>P.O.â€¯Box:</strong> 962â€¯Mukono</p>
     <p><strong>Tel:</strong> 070â€¯208â€¯7622 / 077â€¯074â€¯6123</p>
     <p><strong>Email:</strong> stpetersnkoko@gmail.com</p>
-  </div>  <!-- ==================== FORM ==================== -->  <!-- Uses Formsubmit to send results to iamcharlesoc@gmail.com -->  <form action="https://formsubmit.co/iamcharlesoc@gmail.com" method="POST" enctype="multipart/form-data">
-    <!-- Disable Formsubmit captcha (optional) -->
-    <input type="hidden" name="_captcha" value="false" />
-    <!-- Redirect URL after successful submit (change if needed) -->
-    <input type="hidden" name="_next" value="https://stpeters.example.com/thank-you.html" /><label for="fullname">Full Name</label>
+  </div>  <!-- ==================== FORM ==================== -->  <!-- Uses Formsubmit to send results to iamcharlesoc@gmail.com -->  <form id="admissionsForm" method="POST" enctype="multipart/form-data">
+<label for="fullname">Full Name</label>
 <input type="text" id="fullname" name="Full Name" placeholder="Enter full name" required />
 
 <label for="dob">Date of Birth</label>
@@ -200,5 +197,8 @@ small {
 <button type="submit">Submit Application</button>
 
   </form>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+<script src="forms.js"></script>
 </body>
 </html>
