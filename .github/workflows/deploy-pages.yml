@@ -20,7 +20,7 @@ jobs:
         run: |
           mkdir -p _site
           for file in *.html *.css *.js *.jpg *.jpeg *.png *.gif *.svg *.webp *.ico *.mp4 *.webm *.woff *.woff2 *.ttf; do
-            if [ -f "$file" ]; then cp "$file" _site/; fi
+            if [ -f "$file" ] && [ "$file" != "v.mp4" ]; then cp "$file" _site/; fi
           done
           for dir in assets images css js fonts; do
             if [ -d "$dir" ]; then cp -R "$dir" "_site/$dir"; fi
