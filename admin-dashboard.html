@@ -2,7 +2,8 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>School Admin | St Peter's Nkokonjeru SS</title>
 <style>
 :root{font-family:Arial,sans-serif;color:#202124;background:#f5f6fa}*{box-sizing:border-box}body{margin:0;padding:20px}main{max-width:1100px;margin:auto}header,.panel{background:white;padding:20px;margin:0 0 18px;border-radius:12px;box-shadow:0 3px 18px #0000000d}h1,h2{color:#a71919}nav{display:flex;gap:12px;flex-wrap:wrap}nav a{color:#a71919}label{display:block;font-weight:600;margin:12px 0}input,select,textarea,button{width:100%;padding:11px;margin-top:5px;border:1px solid #ccd0d8;border-radius:6px}button{background:#a71919;color:white;border:0;font-weight:bold;cursor:pointer}button:disabled{opacity:.5}form{max-width:640px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.item{padding:12px 0;border-bottom:1px solid #e4e4e4;overflow-wrap:anywhere}.item button{margin-top:8px}.muted{color:#666}.status{font-weight:600;white-space:pre-wrap}
-</style></head><body><main>
+</style><link rel="stylesheet" href="performance.css">
+</head><body><main>
 <header><p><a href="home.html">← School website</a></p><h1>School Administration</h1><p class="muted">Restricted to accounts explicitly registered by the school as administrators. Do not share this page as an access credential.</p>
 <form id="loginForm"><label>Administrator email <input id="email" type="email" autocomplete="username" required></label><label>Password <input id="password" type="password" autocomplete="current-password" required></label><button>Sign in</button></form>
 <div id="adminArea" hidden><p id="who"></p><button id="signOut" type="button">Sign out</button></div><p id="status" class="status" role="status"></p></header>
