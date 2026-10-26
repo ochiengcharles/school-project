@@ -596,14 +596,19 @@
 
 });
 
-// --- Header scroll effect (add 'scrolled' class) ---
-window.addEventListener('scroll', () => {
+// --- Lightweight header scroll effect (passive + frame-throttled) ---
+(() => {
     const header = document.querySelector('.main-header');
-    if (header) {
-        if (window.scrollY > 50) { // Adjust scroll threshold as needed
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    }
-});
+    if (!header) return;
+    let scheduled = false;
+    const updateHeader = () => {
+        header.classList.toggle('scrolled', window.scrollY > 50);
+        scheduled = false;
+    };
+    window.addEventListener('scroll', () => {
+        if (scheduled) return;
+        scheduled = true;
+        window.requestAnimationFrame(updateHeader);
+    }, { passive: true });
+    updateHeader();
+})();
