@@ -6,7 +6,9 @@
     <title>Gallery - St.Peter's Nkokonjeru SS.</title> Gallery - St. Peter's Nkokonjeru SS.
     <link rel="icon" type="Image" href="assets/images/student 1.jpg">
     <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="performance.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -15,7 +17,7 @@
             <div class="header-content">
                 <!-- Logo -->
                 <div class="logo">
-                    <img src="assets/images/student 1.jpg" alt="School Badge" class="logo-img">
+                    <img src="assets/images/student 1.jpg" alt="School Badge" class="logo-img" loading="eager" decoding="async">
                     <div class="logo-text">
                         <h1>St Peter's Nkokonjeru <span class="accent">SS.</span></h1>
                         <p class="motto">DUC IN ALTUM</p>
@@ -111,63 +113,63 @@
 
                 <div id="galleryGrid">
                     <div class="gallery-item" data-category="events">
-                        <img src="student 7.jpg" alt="Sports Day">
+                        <img src="student 7.jpg" alt="Sports Day" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Annual Sports Day</h4>
                             <p>Fun and competition on the field.</p>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="academics">
-                        <img src="assets/images/ict 1.jpg" alt="Science Fair">
+                        <img src="assets/images/ict 1.jpg" alt="Science Fair" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Ict  Fair Showcase</h4>
                             <p>Students presenting innovative projects.</p>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="campus">
-                        <img src="assets/images/liturgy 6.jpg" alt="School Library">
+                        <img src="assets/images/liturgy 6.jpg" alt="School Library" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Modern Library</h4>
                             <p>A quiet space for learning and research.</p>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="sports">
-                        <img src="assets/images/school choir 1.jpg" alt="Basketball Game">
+                        <img src="assets/images/school choir 1.jpg" alt="Basketball Game" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Intense School Choir</h4>
                             <p>Being God Fearing is the Key.</p>
                         </div>
                     </div>
                      <div class="gallery-item" data-category="events">
-                        <img src="assets/images/liturgy 5.jpg" alt="Graduation Ceremony">
+                        <img src="assets/images/liturgy 5.jpg" alt="Graduation Ceremony" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>St Peter's Day</h4>
                             <p>Celebrating our Saint.</p>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="academics">
-                        <img src="assets/images/student 3.jpg" alt="Classroom Interaction">
+                        <img src="assets/images/student 3.jpg" alt="Classroom Interaction" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Engaging Classroom</h4>
                             <p>Interactive learning in progress.</p>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="campus">
-                        <img src="assets/images/student 4.jpg" alt="School Playground">
+                        <img src="assets/images/student 4.jpg" alt="School Playground" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Spacious Playground</h4>
                             <p>Students enjoying outdoor activities.</p>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="sports">
-                        <img src="assets/images/artwork 1.jpg" alt="Football Training">
+                        <img src="assets/images/artwork 1.jpg" alt="Football Training" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Football Training Session</h4>
                             <p>Developing skills and teamwork.</p>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="academics">
-                        <img src="assets/images/agric 1.jpg" alt="Classroom Interaction">
+                        <img src="assets/images/agric 1.jpg" alt="Classroom Interaction" loading="lazy" decoding="async">
                         <div class="gallery-item-info">
                             <h4>Engaging Classroom</h4>
                             <p>Interactive learning in progress.</p>
@@ -235,7 +237,7 @@
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
         <div class="lightbox-content">
-            <img id="lightboxImg" src="" alt="Lightbox Image">
+            <img id="lightboxImg" src="" alt="Lightbox Image" loading="lazy" decoding="async">
             <div id="lightboxCaption" class="lightbox-caption"></div>
         </div>
     </div>
@@ -287,6 +289,6 @@
         </div>
     </footer>
 
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </body>
 </html>
