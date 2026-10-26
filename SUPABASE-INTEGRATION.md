@@ -35,3 +35,11 @@ If your existing schema differs, update the field mapping rather than creating d
 
 ## Deployment note
 The pages use relative paths, so deploy them alongside the existing school website files. These files are committed to the feature branch; review and merge the branch before publishing. The public form integration is not complete until the existing form pages are wired up and the schema/policies are tested end-to-end.
+
+## School administrator dashboard
+- Open `admin-dashboard.html` after the website deploys. It requires a signed-in account registered in the `public.admin_users` table.
+- To set up the first administrator, create a trusted user in Supabase Dashboard → Authentication → Users. Copy that user's UUID and register it in `public.admin_users` using the Supabase SQL Editor. Do not expose administrator registration to anonymous website visitors.
+- Create teacher and guardian Auth accounts through the school's trusted process. Use the teacher's Auth UUID to assign a class and academic year in the dashboard.
+- To link a guardian, an administrator must add the verified guardian's Auth UUID and the correct student record UUID to `student_guardians`, with the relationship label.
+- The dashboard can review admissions, update application status, view contact messages, add student records, assign teachers, and publish report cards. Verify student and guardian links before publishing.
+- GitHub Pages serves static files only. Supabase Auth and Row Level Security must remain enabled for all private data.
