@@ -6,7 +6,9 @@
     <title>Students life. - St.Peter's Nkokonjeru SS.</title> Students life- St. Peter's Nkokonjeru SS.
     <link rel="icon" type="Image" href="assets/images/student 1.jpg">
     <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="performance.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
    <!-- Header -->
@@ -15,7 +17,7 @@
             <div class="header-content">
                 <!-- Logo -->
                 <div class="logo">
-                    <img src="assets/images/student 1.jpg" alt="School Badge" class="logo-img">
+                    <img src="assets/images/student 1.jpg" alt="School Badge" class="logo-img" loading="eager" decoding="async">
                     <div class="logo-text">
                         <h1>St Peter's Nkokonjeru <span class="accent">SS.</span></h1>
                         <p class="motto">DUC IN ALTUM</p>
@@ -72,21 +74,21 @@
                 <h2 class="section-heading">School News</h2>
                 <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
                     <div class="news-item" style="background-color: var(--white); padding: 20px; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-                        <img src="assets/images/artwork 2.jpg" alt="Art Exhibition" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 15px;">
+                        <img src="assets/images/artwork 2.jpg" alt="Art Exhibition" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 15px;" loading="lazy" decoding="async">
                         <h3>Annual Art Exhibition Success</h3>
                         <p class="date" style="font-size: 0.9em; color: var(--light-text-color); margin-bottom: 10px;"><i class="far fa-calendar-alt"></i> June 10, 2025</p>
                         <p>Our students showcased incredible talent at this year's art exhibition, drawing praise from parents and the local community.</p>
                         
                     </div>
                     <div class="news-item" style="background-color: var(--white); padding: 20px; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-                        <img src="assets/images/school choir 1.jpg" alt="Debate Club" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 15px;">
+                        <img src="assets/images/school choir 1.jpg" alt="Debate Club" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 15px;" loading="lazy" decoding="async">
                         <h3>Debate Club Wins National Competition</h3>
                         <p class="date" style="font-size: 0.9em; color: var(--light-text-color); margin-bottom: 10px;"><i class="far fa-calendar-alt"></i> May 28, 2025</p>
                         <p>A huge congratulations to our Debate Club for their outstanding victory in the national inter-school debate competition!</p>
                         
                     </div>
                     <div class="news-item" style="background-color: var(--white); padding: 20px; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-                        <img src="assets/images/liturgy 6.jpg" alt="Charity Run" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 15px;">
+                        <img src="assets/images/liturgy 6.jpg" alt="Charity Run" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 15px;" loading="lazy" decoding="async">
                         <h3>Charity Fun Run Raises Record Funds</h3>
                         <p class="date" style="font-size: 0.9em; color: var(--light-text-color); margin-bottom: 10px;"><i class="far fa-calendar-alt"></i> April 15, 2025</p>
                         <p>Our community came together to raise over 7,000,000 for local charities during our annual fun run event.</p>
@@ -272,6 +274,6 @@
         </div>
     </footer>
 
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </body>
 </html>
